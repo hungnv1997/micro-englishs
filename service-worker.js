@@ -1,6 +1,6 @@
 // Service Worker for caching CEFR vocabulary data
 const CACHE_NAME = "vocabulary-cache-v1";
-const VOCABULARY_URL = "/cefrj-vocabulary.csv";
+const VOCABULARY_URL = `${import.meta.env.VITE_BASE_URL}/cefrj-vocabulary.csv`;
 
 // Files to cache on install
 const FILES_TO_CACHE = [VOCABULARY_URL];
